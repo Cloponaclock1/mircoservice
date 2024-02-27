@@ -2,6 +2,7 @@
  Partner Microservice Log in/out with database interaction
 
 Communication Contract
+In this instance, the Server is communicating with the microservice (log on/out service)
 The client attempts to gain access to the server. Then the client attempts to create an account. The server processes the by first checking if the username field is not NULL and then if the password field > 5. If not, it notifies the user of the issue respectively. The server then encrypts the password in preparation for being sent to the database.
 
 Execute() is then run and the data is written to the database. Using $result = $stmt->execute(); Which saves the result of the database insert as either True or False.
